@@ -54,6 +54,9 @@ namespace Assets.HeroEditor4D.Common.Scripts.CharacterScripts
         /// </summary>
 		public void Slash1H()
 		{
+			if (IsAction)
+				return;
+			
 			Animator.SetTrigger("Slash1H");
             IsAction = true;
         }
@@ -63,12 +66,17 @@ namespace Assets.HeroEditor4D.Common.Scripts.CharacterScripts
 	    /// </summary>
 	    public void Slash2H()
 	    {
+		    if (IsAction)
+			    return;
+		    
 	        Animator.SetTrigger("Slash2H");
             IsAction = true;
 		}
 
 	    public void Slash(bool twoHanded)
 	    {
+		    if (IsAction)
+			    return;
 	        Animator.SetTrigger(twoHanded ? "Slash2H" : "Slash1H");
             IsAction = true;
 		}

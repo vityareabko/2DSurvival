@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: ClosedArea
+  - name: InterectableObjects
     uniqueID: 358538585
+    locked: 0
+  - name: ClosedArea
+    uniqueID: 3266501025
     locked: 0
