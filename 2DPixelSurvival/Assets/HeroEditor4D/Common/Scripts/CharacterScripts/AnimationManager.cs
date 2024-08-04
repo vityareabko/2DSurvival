@@ -27,6 +27,13 @@ namespace Assets.HeroEditor4D.Common.Scripts.CharacterScripts
 		{
 			Animator.SetInteger("State", (int) state);
 		}
+		
+		public void ForceStopAnimation()
+		{
+			// Останавливаем текущую анимацию, перезапуская текущее состояние
+			Animator.Play(Animator.GetCurrentAnimatorStateInfo(0).shortNameHash, -1, 0);
+			IsAction = false;
+		}
 
 	    /// <summary>
         /// Play Attack animation according to selected weapon.

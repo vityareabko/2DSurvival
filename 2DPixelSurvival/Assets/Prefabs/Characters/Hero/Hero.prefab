@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8831261891873029877}
   - component: {fileID: 7108102022515350136}
   - component: {fileID: 202551719684957069}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ MonoBehaviour:
     EyesColor: {r: 0.8863486, g: 0.44023246, b: 0.013568997, a: 1}
     Mouth: {fileID: 21300004, guid: 5c190d61cd55f964ea24dbd0def87104, type: 3}
   Helmet: {fileID: 0}
-  PrimaryWeapon: {fileID: 21300000, guid: 9deb03629283b3a48a82f3d2f4aa6747, type: 3}
+  PrimaryWeapon: {fileID: 0}
   SecondaryWeapon: {fileID: 0}
   Back: {fileID: 0}
   Quiver: {fileID: 0}
@@ -215,7 +215,7 @@ MonoBehaviour:
   - {fileID: 7334100784235006950}
   - {fileID: 6690365875478973599}
   WingsRenderer: {fileID: 8809084516324343333}
-  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  DefaultMaterial: {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   EyesPaintMaterial: {fileID: 2100000, guid: 3e78a9b3616c45e5a6cbd9fca765b55f, type: 2}
   EquipmentPaintMaterial: {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
   WeaponType: 2
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 4904538061650345630}
   - component: {fileID: 6915095538161343746}
   - component: {fileID: 6121226970628541105}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Quiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 6050938541634326865}
   - component: {fileID: 1158725670341306147}
   - component: {fileID: 4410455780975527876}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sleeve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -453,7 +453,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 3334161971773699548}
   - component: {fileID: 3558901067075605532}
   - component: {fileID: 2384790670067493520}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eyesbrows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -610,7 +610,7 @@ GameObject:
   - component: {fileID: 3834749757285367523}
   - component: {fileID: 8079446979480105207}
   - component: {fileID: 1304852181257606627}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LegL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +653,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 1345955763973230641}
   - component: {fileID: 8870191817513622769}
   - component: {fileID: 5221344355627856416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -810,7 +810,7 @@ GameObject:
   - component: {fileID: 8646914435019688934}
   - component: {fileID: 4339587961904401529}
   - component: {fileID: 2608001816066867278}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -909,7 +909,7 @@ GameObject:
   - component: {fileID: 5192094139586778368}
   - component: {fileID: 3198815829417991539}
   - component: {fileID: 5106459937337645708}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LimbL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1008,7 +1008,7 @@ GameObject:
   - component: {fileID: 7982133745337330128}
   - component: {fileID: 9220654467461782833}
   - component: {fileID: 5644804362630237274}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1107,7 +1107,7 @@ GameObject:
   - component: {fileID: 2623213925177753710}
   - component: {fileID: 4550611680834975820}
   - component: {fileID: 3616360728975148471}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1149,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1204,7 +1204,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8519078915981334341}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmRAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1236,7 +1236,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8510710112373961856}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FireMuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1269,7 +1269,7 @@ GameObject:
   - component: {fileID: 7674338623156027983}
   - component: {fileID: 2407949523174103941}
   - component: {fileID: 3666053642382727348}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fingers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1312,7 +1312,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1370,7 +1370,7 @@ GameObject:
   - component: {fileID: 5404827898324643602}
   - component: {fileID: 4836421941175356469}
   - component: {fileID: 5665405635799633110}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1412,7 +1412,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1469,7 +1469,7 @@ GameObject:
   - component: {fileID: 8897633448267703990}
   - component: {fileID: 4348286560085666466}
   - component: {fileID: 4405962747720452610}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1568,7 +1568,7 @@ GameObject:
   - component: {fileID: 6420106555079427499}
   - component: {fileID: 2729929996273050961}
   - component: {fileID: 3956829408084436938}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1611,7 +1611,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1669,7 +1669,7 @@ GameObject:
   - component: {fileID: 1981564900454534384}
   - component: {fileID: 3260342334052085760}
   - component: {fileID: 5708992557201944928}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1766,7 +1766,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 408812663490308920}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1803,7 +1803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7077225973393720182}
   - component: {fileID: 5519343280260446562}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1888,7 +1888,7 @@ GameObject:
   - component: {fileID: 8879634580927306129}
   - component: {fileID: 2662705743694727551}
   - component: {fileID: 514059840175022359}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1985,7 +1985,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6895458832774888556}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HeadAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2019,7 +2019,7 @@ GameObject:
   - component: {fileID: 4974015714310725604}
   - component: {fileID: 275942868606276911}
   - component: {fileID: 5362524562933512635}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2118,7 +2118,7 @@ GameObject:
   - component: {fileID: 8601886967891125496}
   - component: {fileID: 2950556693266278657}
   - component: {fileID: 8109416767399908568}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LimbL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2160,7 +2160,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2217,7 +2217,7 @@ GameObject:
   - component: {fileID: 8526201150485846125}
   - component: {fileID: 4940639251218639340}
   - component: {fileID: 267787844378988683}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2262,7 +2262,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2319,7 +2319,7 @@ GameObject:
   - component: {fileID: 375711741028711319}
   - component: {fileID: 1268001799771564726}
   - component: {fileID: 192457578256700900}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HandR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2420,7 +2420,7 @@ GameObject:
   - component: {fileID: 5644157522094810544}
   - component: {fileID: 8954902222409805935}
   - component: {fileID: 2537642471898126161}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SecondaryWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2463,7 +2463,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2518,7 +2518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4118360141051502523}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmLAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2552,7 +2552,7 @@ GameObject:
   - component: {fileID: 8915851905739827276}
   - component: {fileID: 3735917784232964091}
   - component: {fileID: 8583490296330499733}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LimbU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2594,7 +2594,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2649,7 +2649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7320772585397741524}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: UpperBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2692,7 +2692,7 @@ GameObject:
   - component: {fileID: 5447597643679275674}
   - component: {fileID: 1636868783482953595}
   - component: {fileID: 7708064619855633121}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2734,7 +2734,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2791,7 +2791,7 @@ GameObject:
   - component: {fileID: 93660996898302193}
   - component: {fileID: 6004798012018130643}
   - component: {fileID: 4712180848714581625}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2890,7 +2890,7 @@ GameObject:
   - component: {fileID: 6875586469577930144}
   - component: {fileID: 1488717333160036138}
   - component: {fileID: 7922218391419545100}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2935,7 +2935,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2993,7 +2993,7 @@ GameObject:
   - component: {fileID: 8109954882254786292}
   - component: {fileID: 2667504060399342398}
   - component: {fileID: 5177506526465822368}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3035,7 +3035,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3092,7 +3092,7 @@ GameObject:
   - component: {fileID: 7427691351414040188}
   - component: {fileID: 8303130461230097575}
   - component: {fileID: 7289021465315717433}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3143,7 +3143,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3200,7 +3200,7 @@ GameObject:
   - component: {fileID: 4519641077023706051}
   - component: {fileID: 3834052693568343265}
   - component: {fileID: 821910372790373532}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3242,7 +3242,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3299,7 +3299,7 @@ GameObject:
   - component: {fileID: 8863280387209096613}
   - component: {fileID: 5178243215524858700}
   - component: {fileID: 2523667973241514662}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3342,7 +3342,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3399,7 +3399,7 @@ GameObject:
   - component: {fileID: 7055945626082012661}
   - component: {fileID: 103218105944566585}
   - component: {fileID: 3777255647751482306}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LimbU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3441,7 +3441,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3498,7 +3498,7 @@ GameObject:
   - component: {fileID: 8884104656032574673}
   - component: {fileID: 6369197678023086805}
   - component: {fileID: 4673455856420494905}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3598,7 +3598,7 @@ GameObject:
   - component: {fileID: 4495954484545324913}
   - component: {fileID: 5416325142627050730}
   - component: {fileID: 3028432146320793923}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ShieldFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3640,7 +3640,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3697,7 +3697,7 @@ GameObject:
   - component: {fileID: 5424674690401726756}
   - component: {fileID: 5586847120255315005}
   - component: {fileID: 611904273538765003}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3739,7 +3739,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3796,7 +3796,7 @@ GameObject:
   - component: {fileID: 9025689937302536444}
   - component: {fileID: 7974711957203861470}
   - component: {fileID: 219040636548295537}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3838,7 +3838,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3895,7 +3895,7 @@ GameObject:
   - component: {fileID: 5601926039979227712}
   - component: {fileID: 4032628255049952700}
   - component: {fileID: 47048640796882643}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3937,7 +3937,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3992,7 +3992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8183185370844711383}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FireMuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4025,7 +4025,7 @@ GameObject:
   - component: {fileID: 471489142325536162}
   - component: {fileID: 2215535913765203756}
   - component: {fileID: 669463217444742337}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4067,7 +4067,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4124,7 +4124,7 @@ GameObject:
   - component: {fileID: 8932656751482890342}
   - component: {fileID: 2632556161868457196}
   - component: {fileID: 6702785845492196648}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Beard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4166,7 +4166,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4223,7 +4223,7 @@ GameObject:
   - component: {fileID: 387230233090852145}
   - component: {fileID: 2921922444088782761}
   - component: {fileID: 2683778839711231673}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Quiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4322,7 +4322,7 @@ GameObject:
   - component: {fileID: 7793144532191753016}
   - component: {fileID: 3690367719893053502}
   - component: {fileID: 5785715162850725003}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4386,7 +4386,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 245
   m_Sprite: {fileID: 21300006, guid: 19e31b1222330214d922c2fcdbede153, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.44001427, g: 0.7739902, b: 0.9056604, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -4422,7 +4422,7 @@ GameObject:
   - component: {fileID: 3957648544416361666}
   - component: {fileID: 4462974323086759792}
   - component: {fileID: 1503142715107697520}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4465,7 +4465,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4523,7 +4523,7 @@ GameObject:
   - component: {fileID: 6545184814541583291}
   - component: {fileID: 6546018981296925889}
   - component: {fileID: 4204978244903726196}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4567,7 +4567,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4624,7 +4624,7 @@ GameObject:
   - component: {fileID: 2055241060306153561}
   - component: {fileID: 4950342161916601290}
   - component: {fileID: 7849551891319577255}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarringR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4666,7 +4666,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4724,7 +4724,7 @@ GameObject:
   - component: {fileID: 3672722106591527040}
   - component: {fileID: 8405332117498135574}
   - component: {fileID: 8730569063784112427}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4823,7 +4823,7 @@ GameObject:
   - component: {fileID: 4075662835039408149}
   - component: {fileID: 7876922886156207927}
   - component: {fileID: 6735190795953622618}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4866,7 +4866,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3e78a9b3616c45e5a6cbd9fca765b55f, type: 2}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4924,7 +4924,7 @@ GameObject:
   - component: {fileID: 4561638550192062980}
   - component: {fileID: 2262810189858351735}
   - component: {fileID: 3905854520913078302}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5023,7 +5023,7 @@ GameObject:
   - component: {fileID: 3627054125128387806}
   - component: {fileID: 8909205519019170278}
   - component: {fileID: 7875358226154887071}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5065,7 +5065,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5121,7 +5121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3337827278997461785}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorStatus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5154,7 +5154,7 @@ GameObject:
   - component: {fileID: 7093173141918678413}
   - component: {fileID: 6834657601235429672}
   - component: {fileID: 1226930791990719414}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5196,7 +5196,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5251,7 +5251,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2175295441155743036}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorWeaponBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5284,7 +5284,7 @@ GameObject:
   - component: {fileID: 2030503297718237936}
   - component: {fileID: 8627131155086702957}
   - component: {fileID: 5414944717777738409}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sleeve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5326,7 +5326,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5383,7 +5383,7 @@ GameObject:
   - component: {fileID: 505744112303778326}
   - component: {fileID: 7024535478741031621}
   - component: {fileID: 4883491230997936914}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HandR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5428,7 +5428,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5485,7 +5485,7 @@ GameObject:
   - component: {fileID: 6316001097101671856}
   - component: {fileID: 7972257378054175118}
   - component: {fileID: 6101660801729185395}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5527,7 +5527,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5584,7 +5584,7 @@ GameObject:
   - component: {fileID: 1267665873191745274}
   - component: {fileID: 3844429730986147287}
   - component: {fileID: 1396408156863111201}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LegR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5627,7 +5627,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5683,7 +5683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8016510205301698285}
   - component: {fileID: 3120211923996482164}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5768,7 +5768,7 @@ GameObject:
   - component: {fileID: 7393410747218246912}
   - component: {fileID: 337971611683538408}
   - component: {fileID: 5901421742351331151}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Makeup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5810,7 +5810,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5867,7 +5867,7 @@ GameObject:
   - component: {fileID: 5655953066391643995}
   - component: {fileID: 6073734405433855323}
   - component: {fileID: 6805658969095003820}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5909,7 +5909,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5966,7 +5966,7 @@ GameObject:
   - component: {fileID: 7642363896990887152}
   - component: {fileID: 5903034511739067760}
   - component: {fileID: 8215670465728483486}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarringL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6008,7 +6008,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6065,7 +6065,7 @@ GameObject:
   - component: {fileID: 7542931709436217906}
   - component: {fileID: 9012328991331406893}
   - component: {fileID: 6371011453335214156}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LegR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6165,7 +6165,7 @@ GameObject:
   - component: {fileID: 7984471351099332510}
   - component: {fileID: 5209381862645397744}
   - component: {fileID: 346905589042028584}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6209,7 +6209,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6264,7 +6264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5852732599690868125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6299,7 +6299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5215299657759311474}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmLAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6333,7 +6333,7 @@ GameObject:
   - component: {fileID: 1174163203451918529}
   - component: {fileID: 1907555923209694225}
   - component: {fileID: 2567637706933325894}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6375,7 +6375,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6433,7 +6433,7 @@ GameObject:
   - component: {fileID: 3785020809298245733}
   - component: {fileID: 8644917052476914220}
   - component: {fileID: 2689716191400588223}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6481,7 +6481,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6538,7 +6538,8 @@ GameObject:
   - component: {fileID: 3026276120831631744}
   - component: {fileID: 2354324161722173951}
   - component: {fileID: 2579558057535716666}
-  m_Layer: 0
+  - component: {fileID: 8243126789543786431}
+  m_Layer: 6
   m_Name: PrimaryWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6583,7 +6584,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6629,6 +6630,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpriteName: Side
   SpriteNameFallback: []
+--- !u!61 &8243126789543786431
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3099530402353210543}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.20639688, y: 0.5184083}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 2.56, y: 5.12}
+    newSize: {x: 2.56, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.86392796, y: 2.240763}
+  m_EdgeRadius: 0
 --- !u!1 &3216044568349299682
 GameObject:
   m_ObjectHideFlags: 0
@@ -6640,7 +6686,7 @@ GameObject:
   - component: {fileID: 3468083863216981195}
   - component: {fileID: 4551874922999480804}
   - component: {fileID: 2279473170610813350}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6746,7 +6792,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5007964287235657203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmRAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6780,7 +6826,7 @@ GameObject:
   - component: {fileID: 659661149661566984}
   - component: {fileID: 9141554925836216106}
   - component: {fileID: 6057403451130056330}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6844,7 +6890,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 780
   m_Sprite: {fileID: 21300002, guid: 19e31b1222330214d922c2fcdbede153, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.44001427, g: 0.7739902, b: 0.9056604, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6879,7 +6925,7 @@ GameObject:
   - component: {fileID: 1834781509448664010}
   - component: {fileID: 6994324738405497223}
   - component: {fileID: 7934844501264162770}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6943,7 +6989,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 380
   m_Sprite: {fileID: 21300006, guid: 19e31b1222330214d922c2fcdbede153, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.44001427, g: 0.7739902, b: 0.9056604, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6978,7 +7024,7 @@ GameObject:
   - component: {fileID: 2142196054965724363}
   - component: {fileID: 6274639596712653585}
   - component: {fileID: 3928302404060682206}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HandL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7025,7 +7071,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7082,7 +7128,7 @@ GameObject:
   - component: {fileID: 3593773353612432958}
   - component: {fileID: 8767927724130849391}
   - component: {fileID: 5270212269701907870}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7124,7 +7170,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7180,7 +7226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4429085899008040931}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7218,7 +7264,7 @@ GameObject:
   - component: {fileID: 2680889872547189714}
   - component: {fileID: 2684112565677716385}
   - component: {fileID: 5236217628196721268}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LegL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7318,7 +7364,7 @@ GameObject:
   - component: {fileID: 8869699569387224463}
   - component: {fileID: 8667729095273118895}
   - component: {fileID: 163534035903977044}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7360,7 +7406,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7418,7 +7464,7 @@ GameObject:
   - component: {fileID: 8168456553345867663}
   - component: {fileID: 7017059491646848998}
   - component: {fileID: 8058923740703276579}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7469,7 +7515,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7525,7 +7571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8242603925298757231}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HeadAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7559,7 +7605,7 @@ GameObject:
   - component: {fileID: 1182396589362016115}
   - component: {fileID: 5067544682649410835}
   - component: {fileID: 7042168761252106654}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7601,7 +7647,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7658,7 +7704,7 @@ GameObject:
   - component: {fileID: 1839094676228578641}
   - component: {fileID: 7334100784235006950}
   - component: {fileID: 52161872628630945}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarringL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7700,7 +7746,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7757,7 +7803,7 @@ GameObject:
   - component: {fileID: 798725721611235258}
   - component: {fileID: 6795548859352594764}
   - component: {fileID: 4688329328847329800}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7799,7 +7845,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7856,7 +7902,7 @@ GameObject:
   - component: {fileID: 777053358908388814}
   - component: {fileID: 8950061859662491695}
   - component: {fileID: 5322246464130566725}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LimbU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7898,7 +7944,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7955,7 +8001,7 @@ GameObject:
   - component: {fileID: 8709579716988607149}
   - component: {fileID: 5949158826551819456}
   - component: {fileID: 4933591168856719830}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7997,7 +8043,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8054,7 +8100,7 @@ GameObject:
   - component: {fileID: 5882184253548059233}
   - component: {fileID: 6218680473556862318}
   - component: {fileID: 776072932222311123}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8155,7 +8201,7 @@ GameObject:
   - component: {fileID: 8417204205503483007}
   - component: {fileID: 3426088025823002414}
   - component: {fileID: 5726124515359177741}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Beard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8255,7 +8301,7 @@ GameObject:
   - component: {fileID: 1696225179393424560}
   - component: {fileID: 377278655245961424}
   - component: {fileID: 7284409513369972533}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8354,7 +8400,7 @@ MonoBehaviour:
     EyesColor: {r: 0, g: 0.78431374, b: 1, a: 1}
     Mouth: {fileID: 0}
   Helmet: {fileID: 0}
-  PrimaryWeapon: {fileID: 21300000, guid: 9deb03629283b3a48a82f3d2f4aa6747, type: 3}
+  PrimaryWeapon: {fileID: 0}
   SecondaryWeapon: {fileID: 0}
   Back: {fileID: 0}
   Quiver: {fileID: 0}
@@ -8458,7 +8504,7 @@ MonoBehaviour:
   - {fileID: 183817075178777123}
   - {fileID: 6134238320188052229}
   WingsRenderer: {fileID: 35145787957380452}
-  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  DefaultMaterial: {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   EyesPaintMaterial: {fileID: 2100000, guid: 3e78a9b3616c45e5a6cbd9fca765b55f, type: 2}
   EquipmentPaintMaterial: {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
   WeaponType: 2
@@ -8551,7 +8597,7 @@ GameObject:
   - component: {fileID: 3894036033066981189}
   - component: {fileID: 2212115077616759057}
   - component: {fileID: 4496743328303149517}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LimbL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8593,7 +8639,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8650,7 +8696,7 @@ GameObject:
   - component: {fileID: 5896756440634560311}
   - component: {fileID: 6690365875478973599}
   - component: {fileID: 7717879608045251711}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarringR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8692,7 +8738,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8748,7 +8794,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8311382158018095955}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorStatus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8781,7 +8827,7 @@ GameObject:
   - component: {fileID: 3001044323677201713}
   - component: {fileID: 7805192881860755226}
   - component: {fileID: 133512274677627731}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8824,7 +8870,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8880,7 +8926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7083506462258784314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorWeaponApex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8913,7 +8959,8 @@ GameObject:
   - component: {fileID: 6483899341099437720}
   - component: {fileID: 981463112073682673}
   - component: {fileID: 1816312051801190464}
-  m_Layer: 0
+  - component: {fileID: 4729878018440592435}
+  m_Layer: 6
   m_Name: PrimaryWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8957,7 +9004,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9004,6 +9051,51 @@ MonoBehaviour:
   SpriteName: Front
   SpriteNameFallback:
   - Side
+--- !u!61 &4729878018440592435
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4362052438594619731}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.19244662, y: 0.5735315}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 2.56, y: 5.12}
+    newSize: {x: 2.56, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9946235, y: 2.2596555}
+  m_EdgeRadius: 0
 --- !u!1 &4409268679679691367
 GameObject:
   m_ObjectHideFlags: 0
@@ -9013,7 +9105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2648249877647855236}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HeadAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9047,7 +9139,7 @@ GameObject:
   - component: {fileID: 2586605945572867913}
   - component: {fileID: 5619351496938967444}
   - component: {fileID: 8914077011080504088}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SecondaryWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9147,7 +9239,7 @@ GameObject:
   - component: {fileID: 4481870079760890313}
   - component: {fileID: 7706958271310174318}
   - component: {fileID: 4954428579030811882}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9189,7 +9281,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9244,7 +9336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6374707113513275574}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LowerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9277,7 +9369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3188641924235848105}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmRAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9311,7 +9403,8 @@ GameObject:
   - component: {fileID: 4697257683983336153}
   - component: {fileID: 5702143532207850938}
   - component: {fileID: 1075429540494782902}
-  m_Layer: 0
+  - component: {fileID: 2141031727359524947}
+  m_Layer: 6
   m_Name: PrimaryWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9381,7 +9474,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 5.12}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -9402,6 +9495,51 @@ MonoBehaviour:
   SpriteName: Front
   SpriteNameFallback:
   - Side
+--- !u!61 &2141031727359524947
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4674438257611094507}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.1461215, y: 0.51863796}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 2.56, y: 5.12}
+    newSize: {x: 0.64, y: 0.64}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7791439, y: 2.2438302}
+  m_EdgeRadius: 0
 --- !u!1 &4715285935439881618
 GameObject:
   m_ObjectHideFlags: 0
@@ -9411,7 +9549,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018961369856148957}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorWeaponApex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9444,7 +9582,7 @@ GameObject:
   - component: {fileID: 1618783963441718471}
   - component: {fileID: 2704841438102661428}
   - component: {fileID: 3287582290980451076}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LimbL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9486,7 +9624,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9541,7 +9679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5696231953855961981}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorBow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9574,7 +9712,7 @@ GameObject:
   - component: {fileID: 5358281337735566283}
   - component: {fileID: 4209746147359321404}
   - component: {fileID: 3611220241272694574}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9618,7 +9756,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9676,7 +9814,7 @@ GameObject:
   - component: {fileID: 9016269517950515076}
   - component: {fileID: 4657060885773442000}
   - component: {fileID: 7886438835395111723}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HandL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9724,7 +9862,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9782,7 +9920,7 @@ GameObject:
   - component: {fileID: 6959147732360787655}
   - component: {fileID: 2220940302022753765}
   - component: {fileID: 8635725981129601396}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9879,7 +10017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1603576222650696942}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: UpperBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9922,7 +10060,7 @@ GameObject:
   - component: {fileID: 9219515904200897760}
   - component: {fileID: 8563865938992609731}
   - component: {fileID: 5783050827138513546}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Makeup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9964,7 +10102,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10019,7 +10157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6012764715313445850}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorBow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10052,7 +10190,7 @@ GameObject:
   - component: {fileID: 4004259771188574466}
   - component: {fileID: 1713140712243322985}
   - component: {fileID: 811820799624027700}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HandL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10099,7 +10237,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10156,7 +10294,7 @@ GameObject:
   - component: {fileID: 5891283509337023627}
   - component: {fileID: 5558323597097629196}
   - component: {fileID: 9112587210727246000}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Quiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10198,7 +10336,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10255,7 +10393,7 @@ GameObject:
   - component: {fileID: 101045588127686013}
   - component: {fileID: 7195924037343471279}
   - component: {fileID: 8844646113190053784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10299,7 +10437,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10356,7 +10494,7 @@ GameObject:
   - component: {fileID: 3427775100023330300}
   - component: {fileID: 6688109859091935058}
   - component: {fileID: 8177826162745752695}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eyesbrows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10398,7 +10536,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10456,7 +10594,7 @@ GameObject:
   - component: {fileID: 8376900045615087144}
   - component: {fileID: 7674495880106629919}
   - component: {fileID: 762470933695471170}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LegL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10499,7 +10637,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10554,7 +10692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8686452419867031861}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorStatus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10587,7 +10725,7 @@ GameObject:
   - component: {fileID: 7493539180474316448}
   - component: {fileID: 8487043334686632073}
   - component: {fileID: 4723215099678594108}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10629,7 +10767,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10693,7 +10831,7 @@ GameObject:
   - component: {fileID: 2943622486952538063}
   - component: {fileID: 4534295708596877041}
   - component: {fileID: 15271232630819214}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10982,10 +11120,10 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5435839424595567071}
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 200
-  m_SortAtRoot: 0
+  m_SortingLayerID: 358538585
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortAtRoot: 1
 --- !u!70 &2943622486952538063
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -11018,8 +11156,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.028547587, y: 0.89333403}
-  m_Size: {x: 0.6825043, y: 2.054604}
+  m_Offset: {x: -0.028547585, y: 0.5049951}
+  m_Size: {x: 0.6825043, y: 1.277926}
   m_Direction: 0
 --- !u!50 &4534295708596877041
 Rigidbody2D:
@@ -11029,7 +11167,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5435839424595567071}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -11047,7 +11185,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &15271232630819214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11074,7 +11212,7 @@ GameObject:
   - component: {fileID: 8933154046005642167}
   - component: {fileID: 4372894714489156142}
   - component: {fileID: 4434225399209573308}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sleeve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11173,7 +11311,7 @@ GameObject:
   - component: {fileID: 4168278750805136392}
   - component: {fileID: 441846116655912807}
   - component: {fileID: 4653960805436674175}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11271,7 +11409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6327543098645636437}
   - component: {fileID: 5009742415478489025}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11356,7 +11494,7 @@ GameObject:
   - component: {fileID: 3649133822970832934}
   - component: {fileID: 5593061300975087186}
   - component: {fileID: 2536037393805576138}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LimbU
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11455,7 +11593,7 @@ GameObject:
   - component: {fileID: 4705261664568958202}
   - component: {fileID: 1592215660834521558}
   - component: {fileID: 549940507252513144}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11497,7 +11635,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11554,7 +11692,7 @@ GameObject:
   - component: {fileID: 844198618756593163}
   - component: {fileID: 845812593251530398}
   - component: {fileID: 5610206639611506280}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HandL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11657,7 +11795,7 @@ GameObject:
   - component: {fileID: 5390536601437864943}
   - component: {fileID: 389457810092019245}
   - component: {fileID: 3113968382056532556}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11699,7 +11837,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11757,7 +11895,7 @@ GameObject:
   - component: {fileID: 1976108300829796315}
   - component: {fileID: 2326413638498192000}
   - component: {fileID: 2611148089884333561}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11799,7 +11937,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11854,7 +11992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6827431041172351937}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmLAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11888,7 +12026,8 @@ GameObject:
   - component: {fileID: 8194195295080000447}
   - component: {fileID: 5340785065134588589}
   - component: {fileID: 1836825678542127610}
-  m_Layer: 0
+  - component: {fileID: 6828703138991568704}
+  m_Layer: 6
   m_Name: PrimaryWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11932,7 +12071,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11978,6 +12117,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpriteName: Side
   SpriteNameFallback: []
+--- !u!61 &6828703138991568704
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5808443291906798212}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.17933401, y: 0.52357113}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 2.56, y: 5.12}
+    newSize: {x: 2.56, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9034131, y: 2.2511308}
+  m_EdgeRadius: 0
 --- !u!1 &5838508795611661783
 GameObject:
   m_ObjectHideFlags: 0
@@ -11987,7 +12171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6552157880210977677}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FireMuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12020,7 +12204,7 @@ GameObject:
   - component: {fileID: 4352363806732855349}
   - component: {fileID: 1042719752908238883}
   - component: {fileID: 3535656517039320905}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12062,7 +12246,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12120,7 +12304,7 @@ GameObject:
   - component: {fileID: 6743702560289938784}
   - component: {fileID: 8265972082742980717}
   - component: {fileID: 2109211011606454440}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12163,7 +12347,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12218,7 +12402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 81531014728352115}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12251,7 +12435,7 @@ GameObject:
   - component: {fileID: 8011151800544986424}
   - component: {fileID: 2722567545412146855}
   - component: {fileID: 8702186707828843601}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12293,7 +12477,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12350,7 +12534,7 @@ GameObject:
   - component: {fileID: 8966776820283906215}
   - component: {fileID: 8069278630523506883}
   - component: {fileID: 2426947024769545287}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12393,7 +12577,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3e78a9b3616c45e5a6cbd9fca765b55f, type: 2}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12450,7 +12634,7 @@ GameObject:
   - component: {fileID: 3156874339917127778}
   - component: {fileID: 2411897963943578012}
   - component: {fileID: 1118254536554052209}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FingersL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12493,7 +12677,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12548,7 +12732,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6699408279126345204}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: FireMuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12579,7 +12763,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5992186182052888222}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HeadAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12613,7 +12797,7 @@ GameObject:
   - component: {fileID: 7263003280648928587}
   - component: {fileID: 1857416441631060990}
   - component: {fileID: 2120856558941078542}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Fingers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12656,7 +12840,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12713,7 +12897,7 @@ GameObject:
   - component: {fileID: 2896965110137886677}
   - component: {fileID: 5295635354805875876}
   - component: {fileID: 4592540668114601466}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12755,7 +12939,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12810,7 +12994,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3960883361856328146}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LowerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12843,7 +13027,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4191590204891679006}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorSecondaryShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12876,7 +13060,7 @@ GameObject:
   - component: {fileID: 5997663860592085997}
   - component: {fileID: 4390632688049635626}
   - component: {fileID: 4756307621916455515}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eyesbrows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12918,7 +13102,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12975,7 +13159,7 @@ GameObject:
   - component: {fileID: 3549169069807266301}
   - component: {fileID: 2581777385499628057}
   - component: {fileID: 6295243978369289628}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13018,7 +13202,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13075,7 +13259,7 @@ GameObject:
   - component: {fileID: 5876774876744870651}
   - component: {fileID: 4247011164294090105}
   - component: {fileID: 6777627069282666592}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13139,7 +13323,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 650
   m_Sprite: {fileID: 21300000, guid: 19e31b1222330214d922c2fcdbede153, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.44001427, g: 0.7739902, b: 0.9056604, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -13172,7 +13356,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 596606754587915094}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: UpperBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13213,7 +13397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8701581393003664658}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13246,7 +13430,7 @@ GameObject:
   - component: {fileID: 886631303859113007}
   - component: {fileID: 7695373272582095807}
   - component: {fileID: 6194526694357908816}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13288,7 +13472,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13346,7 +13530,7 @@ GameObject:
   - component: {fileID: 498566058386991267}
   - component: {fileID: 5398233055936554311}
   - component: {fileID: 6769073583231779746}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SecondaryWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13388,7 +13572,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13446,7 +13630,7 @@ GameObject:
   - component: {fileID: 7791425227659274279}
   - component: {fileID: 4056695053142416027}
   - component: {fileID: 4428706369994153891}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13488,7 +13672,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13545,7 +13729,7 @@ GameObject:
   - component: {fileID: 4769106998589437300}
   - component: {fileID: 6134238320188052229}
   - component: {fileID: 5935455001841405130}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarringR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13587,7 +13771,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13645,7 +13829,7 @@ GameObject:
   - component: {fileID: 6118659038669250274}
   - component: {fileID: 4832649267878574844}
   - component: {fileID: 988674254876642468}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Makeup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13687,7 +13871,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13745,7 +13929,7 @@ GameObject:
   - component: {fileID: 7219400077566280242}
   - component: {fileID: 6239300490644596793}
   - component: {fileID: 5201001542114797053}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13844,7 +14028,7 @@ MonoBehaviour:
     EyesColor: {r: 0.8863486, g: 0.44023246, b: 0.013568997, a: 1}
     Mouth: {fileID: 21300004, guid: 5c190d61cd55f964ea24dbd0def87104, type: 3}
   Helmet: {fileID: 0}
-  PrimaryWeapon: {fileID: 21300000, guid: 9deb03629283b3a48a82f3d2f4aa6747, type: 3}
+  PrimaryWeapon: {fileID: 0}
   SecondaryWeapon: {fileID: 0}
   Back: {fileID: 0}
   Quiver: {fileID: 0}
@@ -13948,7 +14132,7 @@ MonoBehaviour:
   - {fileID: 5903034511739067760}
   - {fileID: 4950342161916601290}
   WingsRenderer: {fileID: 1042719752908238883}
-  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  DefaultMaterial: {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   EyesPaintMaterial: {fileID: 2100000, guid: 3e78a9b3616c45e5a6cbd9fca765b55f, type: 2}
   EquipmentPaintMaterial: {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
   WeaponType: 2
@@ -14048,7 +14232,7 @@ GameObject:
   - component: {fileID: 2705880887532078503}
   - component: {fileID: 1679925982985149164}
   - component: {fileID: 2613372255718349418}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14090,7 +14274,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14147,7 +14331,7 @@ GameObject:
   - component: {fileID: 5848149014056899437}
   - component: {fileID: 310748585145637479}
   - component: {fileID: 1104579798233663749}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14189,7 +14373,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14244,7 +14428,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3558565706515188705}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorStatus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14277,7 +14461,7 @@ GameObject:
   - component: {fileID: 6438146735285388031}
   - component: {fileID: 8370153554115330607}
   - component: {fileID: 7088898650177758282}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14319,7 +14503,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14374,7 +14558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7470105965397958685}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LowerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14407,7 +14591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7567994962580341152}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorBow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14440,7 +14624,7 @@ GameObject:
   - component: {fileID: 5073068138920930727}
   - component: {fileID: 35145787957380452}
   - component: {fileID: 1284022623340970637}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14482,7 +14666,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14539,7 +14723,7 @@ GameObject:
   - component: {fileID: 7638182890145545999}
   - component: {fileID: 8009385727514550292}
   - component: {fileID: 6721665113515119983}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14638,7 +14822,7 @@ GameObject:
   - component: {fileID: 1353216454940241800}
   - component: {fileID: 4172307973221760112}
   - component: {fileID: 4844141367824563816}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LegR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14681,7 +14865,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14739,7 +14923,7 @@ GameObject:
   - component: {fileID: 4886627021896145035}
   - component: {fileID: 1956223708735904514}
   - component: {fileID: 8771004594505278473}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Beard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14781,7 +14965,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14838,7 +15022,7 @@ GameObject:
   - component: {fileID: 3329911639502508965}
   - component: {fileID: 2314320718141188942}
   - component: {fileID: 8273077179795491675}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14880,7 +15064,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14935,7 +15119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6674814159479928328}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorWeaponApex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14968,7 +15152,7 @@ GameObject:
   - component: {fileID: 6247073800547773324}
   - component: {fileID: 3757919506424116032}
   - component: {fileID: 4367280666983886452}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15067,7 +15251,7 @@ GameObject:
   - component: {fileID: 7841408760001561805}
   - component: {fileID: 4783157648434052408}
   - component: {fileID: 399635593793406948}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Makeup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15166,7 +15350,7 @@ GameObject:
   - component: {fileID: 6042762816566411993}
   - component: {fileID: 1744087282399833964}
   - component: {fileID: 4503476663312804534}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15182,7 +15366,7 @@ Transform:
   m_GameObject: {fileID: 7187620382126345499}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.18518983, w: 0.9827028}
-  m_LocalPosition: {x: -0.45, y: 0.54999995, z: 0}
+  m_LocalPosition: {x: -0.45, y: 0.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15266,7 +15450,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3392507360099901994}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: AnchorWeaponApex
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15299,7 +15483,7 @@ GameObject:
   - component: {fileID: 5767300965689720745}
   - component: {fileID: 5911861937811484617}
   - component: {fileID: 3530724420233615398}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15341,7 +15525,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15398,7 +15582,7 @@ GameObject:
   - component: {fileID: 7612281062794957328}
   - component: {fileID: 7736149010142632191}
   - component: {fileID: 2625354820792805315}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarringL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15497,7 +15681,7 @@ GameObject:
   - component: {fileID: 5099476171561670652}
   - component: {fileID: 8857894315687845256}
   - component: {fileID: 1294522752889146144}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Quiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15539,7 +15723,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15596,7 +15780,7 @@ GameObject:
   - component: {fileID: 1431958395295805254}
   - component: {fileID: 8814297384811734481}
   - component: {fileID: 2294872420256075372}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HandR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15641,7 +15825,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15696,7 +15880,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1869715795213061334}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15729,7 +15913,7 @@ GameObject:
   - component: {fileID: 5110570858196802064}
   - component: {fileID: 5739608594148560533}
   - component: {fileID: 7593164212510575032}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15829,7 +16013,7 @@ GameObject:
   - component: {fileID: 5315878427997373092}
   - component: {fileID: 5001631653226209887}
   - component: {fileID: 4908266855444211638}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15871,7 +16055,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15928,7 +16112,7 @@ GameObject:
   - component: {fileID: 3156433693811759769}
   - component: {fileID: 3443761516197955306}
   - component: {fileID: 3213068132732430056}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15970,7 +16154,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16028,7 +16212,7 @@ GameObject:
   - component: {fileID: 3374665513491156697}
   - component: {fileID: 325402958276081233}
   - component: {fileID: 4609758761748280843}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ShieldFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16070,7 +16254,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16127,7 +16311,7 @@ GameObject:
   - component: {fileID: 4889379764005723445}
   - component: {fileID: 7766472740527282341}
   - component: {fileID: 1092191338408294425}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LegL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16170,7 +16354,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16227,7 +16411,7 @@ GameObject:
   - component: {fileID: 4849776058180695457}
   - component: {fileID: 4308532444867045100}
   - component: {fileID: 8792954368052530037}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sleeve
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16326,7 +16510,7 @@ GameObject:
   - component: {fileID: 6222900767000828366}
   - component: {fileID: 6046156026463062713}
   - component: {fileID: 8284999735989896613}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16368,7 +16552,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16425,7 +16609,7 @@ GameObject:
   - component: {fileID: 20978692937229402}
   - component: {fileID: 1507968703504417187}
   - component: {fileID: 871173989031001868}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarringR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16525,7 +16709,7 @@ GameObject:
   - component: {fileID: 1418084033583918871}
   - component: {fileID: 3460512225448579960}
   - component: {fileID: 3589619115392656939}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16567,7 +16751,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16624,7 +16808,7 @@ GameObject:
   - component: {fileID: 6772411716244793767}
   - component: {fileID: 9140401080012410187}
   - component: {fileID: 610805021340985495}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16666,7 +16850,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16723,7 +16907,7 @@ GameObject:
   - component: {fileID: 5215491274345520322}
   - component: {fileID: 1868809047651926047}
   - component: {fileID: 3447879549826672795}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16765,7 +16949,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16822,7 +17006,7 @@ GameObject:
   - component: {fileID: 2896967892574538623}
   - component: {fileID: 557259083955465018}
   - component: {fileID: 4286615583268159434}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16864,7 +17048,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16922,7 +17106,7 @@ GameObject:
   - component: {fileID: 8150693280656426195}
   - component: {fileID: 7796214672556670936}
   - component: {fileID: 6902835751669157309}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17022,7 +17206,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4181420072941498220}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LowerBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17057,7 +17241,7 @@ GameObject:
   - component: {fileID: 2135331521728603185}
   - component: {fileID: 183817075178777123}
   - component: {fileID: 7045117159562169055}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EarringL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17099,7 +17283,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17156,7 +17340,7 @@ GameObject:
   - component: {fileID: 4641225972631471543}
   - component: {fileID: 7868501938896501572}
   - component: {fileID: 115266634370586205}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17198,7 +17382,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17255,7 +17439,7 @@ GameObject:
   - component: {fileID: 4678863789585017641}
   - component: {fileID: 8629372858823466807}
   - component: {fileID: 4108495929423811885}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17297,7 +17481,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17354,7 +17538,7 @@ GameObject:
   - component: {fileID: 726888855015149630}
   - component: {fileID: 1366057712282929545}
   - component: {fileID: 5948669595708198581}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mouth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17396,7 +17580,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17454,7 +17638,7 @@ GameObject:
   - component: {fileID: 2371372555338037243}
   - component: {fileID: 7977957765742931003}
   - component: {fileID: 4779823913695742040}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FingersR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17497,7 +17681,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17554,7 +17738,7 @@ GameObject:
   - component: {fileID: 8721254719548954643}
   - component: {fileID: 3003073885189120350}
   - component: {fileID: 1852523176670352806}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SecondaryWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17596,7 +17780,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17651,7 +17835,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4120092287319689846}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17689,7 +17873,7 @@ GameObject:
   - component: {fileID: 2925202124933388962}
   - component: {fileID: 7613645958487417618}
   - component: {fileID: 8824319888997095305}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17731,7 +17915,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17788,7 +17972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3068749467845861501}
   - component: {fileID: 5449927734870922652}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17873,7 +18057,7 @@ GameObject:
   - component: {fileID: 7017233575606977430}
   - component: {fileID: 8809084516324343333}
   - component: {fileID: 2284291704880086112}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17915,7 +18099,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17972,7 +18156,7 @@ GameObject:
   - component: {fileID: 3058479619539623498}
   - component: {fileID: 6066421007100795437}
   - component: {fileID: 7447120481156395569}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18069,7 +18253,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3553766066131111557}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: UpperBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18110,7 +18294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8389994988370585318}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18143,7 +18327,7 @@ GameObject:
   - component: {fileID: 5972377384460483794}
   - component: {fileID: 5676399883399883186}
   - component: {fileID: 4509014799715985278}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18240,7 +18424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5003010576002694272}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmRAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18275,7 +18459,7 @@ GameObject:
   - component: {fileID: 2055432152600304439}
   - component: {fileID: 5116306715866768501}
   - component: {fileID: 7485609934596515003}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18374,7 +18558,7 @@ MonoBehaviour:
     EyesColor: {r: 0.8863486, g: 0.44023246, b: 0.013568997, a: 1}
     Mouth: {fileID: 21300000, guid: 5c190d61cd55f964ea24dbd0def87104, type: 3}
   Helmet: {fileID: 0}
-  PrimaryWeapon: {fileID: 21300000, guid: 9deb03629283b3a48a82f3d2f4aa6747, type: 3}
+  PrimaryWeapon: {fileID: 0}
   SecondaryWeapon: {fileID: 0}
   Back: {fileID: 0}
   Quiver: {fileID: 0}
@@ -18476,7 +18660,7 @@ MonoBehaviour:
   - {fileID: 7736149010142632191}
   - {fileID: 1507968703504417187}
   WingsRenderer: {fileID: 3757919506424116032}
-  DefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  DefaultMaterial: {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   EyesPaintMaterial: {fileID: 2100000, guid: 3e78a9b3616c45e5a6cbd9fca765b55f, type: 2}
   EquipmentPaintMaterial: {fileID: 2100000, guid: b67e1036325c49a4a378ba14ec243c30, type: 2}
   WeaponType: 2
@@ -18571,7 +18755,7 @@ GameObject:
   - component: {fileID: 4404644419471950350}
   - component: {fileID: 8657526275554940229}
   - component: {fileID: 1011302124385101329}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18613,7 +18797,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18668,7 +18852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5542776153880988065}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: AnchorBow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18701,7 +18885,7 @@ GameObject:
   - component: {fileID: 7445561134555140788}
   - component: {fileID: 8902450642265445484}
   - component: {fileID: 6527433934490614720}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18743,7 +18927,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18801,7 +18985,7 @@ GameObject:
   - component: {fileID: 6302679710264989594}
   - component: {fileID: 1934047569472504372}
   - component: {fileID: 2193148218933813311}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Armor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18843,7 +19027,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -18898,7 +19082,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9027563081657204922}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: ArmLAnchor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18932,7 +19116,7 @@ GameObject:
   - component: {fileID: 4163997530398036779}
   - component: {fileID: 2045624948877310938}
   - component: {fileID: 8634801461308378164}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LegR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18975,7 +19159,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19030,7 +19214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3985416806577532395}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19068,7 +19252,7 @@ GameObject:
   - component: {fileID: 4654816296382948978}
   - component: {fileID: 4729003708642906480}
   - component: {fileID: 6515652021229644468}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HandR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19112,7 +19296,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19170,7 +19354,7 @@ GameObject:
   - component: {fileID: 2884467762510577521}
   - component: {fileID: 4591679150233586046}
   - component: {fileID: 1562352991941974967}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19212,7 +19396,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6fc87553e35b0c543a2cc9986d137925, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

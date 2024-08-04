@@ -24,7 +24,6 @@ namespace DevSystems
         private void OnPickUpHandler(ISelectable obj)
         {
             PickUp?.Invoke(obj);
-            
         }
     }
 }

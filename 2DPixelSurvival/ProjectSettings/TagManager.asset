@@ -11,7 +11,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Tool
   - 
   - 
   - 
@@ -41,9 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: InterectableObjects
+  - name: PlayerSortLayer
     uniqueID: 358538585
     locked: 0
   - name: ClosedArea
     uniqueID: 3266501025
+    locked: 0
+  - name: Fog
+    uniqueID: 265217833
+    locked: 0
+  - name: WorldUI
+    uniqueID: 2689326323
     locked: 0

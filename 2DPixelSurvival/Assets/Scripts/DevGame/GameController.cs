@@ -11,6 +11,7 @@ namespace DevGame
         [SerializeField] private Player _player;
         [SerializeField] private Collector _collector;
 
+        [SerializeField] private CheckingMiningRules _checkingMiningRules;
         private PlayerHandEquipmentStorage _playerHandEquipmentStorage;
         
         private void Awake()
@@ -18,6 +19,7 @@ namespace DevGame
             _playerHandEquipmentStorage = new PlayerHandEquipmentStorage(new List<HandEquipment>());
             
             _player.Initialize(_playerHandEquipmentStorage);
+            _checkingMiningRules.Initialize(_playerHandEquipmentStorage, _player);
 
             _collector.PickUp += OnPickUpSelectableHandler;
         }
@@ -27,20 +29,23 @@ namespace DevGame
             switch (obj.SelectableType)
             {
                 case PickUpType.Axe:
-                    // действия когда игрок подобрал Axe
-                    Debug.Log("Подобрал епта !");
-                    if (obj is HandEquipment tool)
-                        _playerHandEquipmentStorage.AddTools(tool);
-                    
+                    Debug.Log("Подобрал топор епт!");
+                    if (obj is HandEquipment toolAxe)
+                        _playerHandEquipmentStorage.AddTools(toolAxe);
                     break;
                 case PickUpType.Pickaxe:
-                    // действия когда игрок подобрал Pickaxe
+                    Debug.Log("Подобрал топор епт!");
+                    if (obj is HandEquipment toolPickAxe)
+                        _playerHandEquipmentStorage.AddTools(toolPickAxe);
                     break;
                 case PickUpType.Sickle:
-                    // действия когда игрок подобрал Sickle
+                    Debug.Log("Подобрал топор епт!");
+                    if (obj is HandEquipment toolSickle)
+                        _playerHandEquipmentStorage.AddTools(toolSickle);
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException();
+                    Debug.LogError("Такого мы не Хандлим !!!");    
+                    break;  
             }
         }
     }
