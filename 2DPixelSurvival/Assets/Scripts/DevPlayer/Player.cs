@@ -1,8 +1,10 @@
 using System;
 using System.Linq;
 using Assets.HeroEditor4D.Common.Scripts.CharacterScripts;
+using Assets.HeroEditor4D.Common.Scripts.Data;
 using Assets.HeroEditor4D.Common.Scripts.Enums;
 using DevSystems;
+using DevSystems.VitalitySystem;
 using UnityEngine;
 
 namespace DevPlayer
@@ -13,16 +15,33 @@ namespace DevPlayer
         void GetMiningResource(bool isStart);
     }
 
-    public class Player : MonoBehaviour, IPlayerAction
+    public interface IPlayerReader
+    {
+        ToolsType GetCurrentToolType();
+        PlayerWeaponType GetCurrentWeaponType();
+        int GetHitToolDamageByType(ToolsType type);
+        int GetHitWeaponDamageByType(PlayerWeaponType type);
+    }
+
+    public class Player : MonoBehaviour, IPlayerAction, IPlayerReader
     {
         [SerializeField] private Rigidbody2D _rb;
         [SerializeField] private AnimationManager _animation;
         [SerializeField] private Character4D _character4D;
+
+        [SerializeField] private VitalityModuleSystem _vitalitySystem;
         
         private PlayerMove _playerMove;
         private PlayerHandEquipmentStorage _playerHandEquipmentStorage;
 
+        private ToolsType _currentToolsType;
+        private PlayerWeaponType _currentWeaponType;
+        
         private bool _isEquip;
+        
+        private ItemSprite _sickle  => _character4D.SpriteCollection.MeleeWeapon1H.FirstOrDefault(i => i.Id == "CustomToolSickle");
+        private ItemSprite _axe     => _character4D.SpriteCollection.MeleeWeapon1H.FirstOrDefault(i => i.Id == "CustomToolAxe");
+        private ItemSprite _pickaxe => _character4D.SpriteCollection.MeleeWeapon2H.FirstOrDefault(i => i.Id == "CustomToolPickAxe");
         
         public void Initialize(PlayerHandEquipmentStorage playerHandEquipmentStorage)
         {
@@ -32,12 +51,19 @@ namespace DevPlayer
         private void Awake()
         {
             UnEquip();
-           _playerMove = new PlayerMove(_animation, _rb, _character4D);
+
+            _currentToolsType = ToolsType.None;
+            _currentWeaponType = PlayerWeaponType.None;
+            _playerMove = new PlayerMove(_animation, _rb, _character4D);
         }
 
         private void Update()
         {
-            TempMethod();
+            // if (Input.GetMouseButtonDown(0))
+            // {
+            //     _vitalitySystem.DecreaseVitalityValue(VitalityModuleName.HealthModule, 10);
+            //     Debug.Log($"Player geting 10 damage, current HP - {_vitalitySystem.GetCurrentVitalityValueByModuleName(VitalityModuleName.HealthModule)}");
+            // }
             
 
             _playerMove.Tick();
@@ -47,81 +73,11 @@ namespace DevPlayer
         {
             _playerMove.FixedTick();
         }
-        
-        
-        private void TempMethod()
-        {
-            // if (Input.GetMouseButton(0))
-            // {
-            //     _animation.Slash(true);
-            // }
-            //
-            // if (Input.GetKeyDown(KeyCode.Alpha1))
-            // {
-            //     if (_playerHandEquipmentStorage.HasTypeOfTools(ToolsType.Axe))
-            //     {
-            //         var axe = _character4D.SpriteCollection.MeleeWeapon1H[119];
-            //         _character4D.Equip(axe, EquipmentPart.MeleeWeapon1H);
-            //     }
-            //     else
-            //     {
-            //         Debug.Log($"нет такого - {ToolsType.Axe} !!");
-            //     }
-            //     
-            // }
-            //
-            // if (Input.GetKeyDown(KeyCode.Alpha2))
-            // {
-            //     var pickaxe = _character4D.SpriteCollection.MeleeWeapon2H.First(t =>
-            //             t.Id == "FantasyHeroes.Basic.MeleeWeapon2H.IronPickaxe");
-            //     _character4D.Equip(pickaxe, EquipmentPart.MeleeWeapon2H);
-            // }
-            //
-            // if (Input.GetKeyDown(KeyCode.Alpha3))
-            // {
-            //     var axe = _character4D.SpriteCollection.MeleeWeapon1H[119];
-            //     _character4D.Equip(axe, EquipmentPart.MeleeWeapon1H);
-            // }
-            //
-            // if (Input.GetKeyDown(KeyCode.Alpha0))
-            // {
-            //     UnEquip();
-            // }
-        }
 
-        private void UnEquip()
-        {
-            _isEquip = false;
-            _character4D.UnEquip(EquipmentPart.MeleeWeapon1H);
-            _character4D.UnEquip(EquipmentPart.MeleeWeapon2H);
-            _character4D.UnEquip(EquipmentPart.Bow);
-        }
-
-        public void SelectTool(ToolsType type)
-        {
-            switch (type)
-            {
-                case ToolsType.None:
-                    UnEquip();
-                    break;
-                case ToolsType.Axe:
-                    var axe = _character4D.SpriteCollection.MeleeWeapon1H[119];
-                    _character4D.Equip(axe, EquipmentPart.MeleeWeapon1H);
-                    _isEquip = true;
-                    break;
-                case ToolsType.Pickaxe:
-                    var pickaxe = _character4D.SpriteCollection.MeleeWeapon2H.First(t =>
-                        t.Id == "FantasyHeroes.Basic.MeleeWeapon2H.IronPickaxe");
-                    _character4D.Equip(pickaxe, EquipmentPart.MeleeWeapon2H);
-                    _isEquip = true;
-                    break;
-                case ToolsType.Sickle:
-                    _isEquip = true;
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
-            }
-        }
+        public ToolsType GetCurrentToolType() => _currentToolsType;
+        public PlayerWeaponType GetCurrentWeaponType() => _currentWeaponType;
+        public int GetHitToolDamageByType(ToolsType type) => _playerHandEquipmentStorage.GetToolData(type).Damage;
+        public int GetHitWeaponDamageByType(PlayerWeaponType type) => _playerHandEquipmentStorage.GetWeaponData(type).Damage;
         
         public void GetMiningResource(bool isStart)
         {
@@ -135,6 +91,49 @@ namespace DevPlayer
                 _animation.ForceStopAnimation();
                 UnEquip();
             }
+        }
+        
+        public void SelectTool(ToolsType type)
+        {
+            switch (type)
+            {
+                case ToolsType.None:
+                    UnEquip();
+                    _currentToolsType = ToolsType.None;
+                    break;
+                
+                case ToolsType.Axe:
+                    _character4D.Equip(_axe, EquipmentPart.MeleeWeapon1H);
+                    _isEquip = true;
+                    _currentToolsType = ToolsType.Axe;
+                    break;
+                
+                case ToolsType.Pickaxe:
+                    _character4D.Equip(_pickaxe, EquipmentPart.MeleeWeapon2H);
+                    _isEquip = true;
+                    _currentToolsType = ToolsType.Pickaxe;
+                    break;
+                
+                case ToolsType.Sickle:
+                    _character4D.Equip(_sickle, EquipmentPart.MeleeWeapon1H);
+                    _isEquip = true;
+                    _currentToolsType = ToolsType.Sickle;
+                    break;
+                
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
+            }
+        }
+        
+        private void UnEquip()
+        {
+            _isEquip = false;
+            _currentToolsType = ToolsType.None;
+            _currentWeaponType = PlayerWeaponType.None;
+            
+            _character4D.UnEquip(EquipmentPart.MeleeWeapon1H);
+            _character4D.UnEquip(EquipmentPart.MeleeWeapon2H);
+            _character4D.UnEquip(EquipmentPart.Bow);
         }
     }
 }

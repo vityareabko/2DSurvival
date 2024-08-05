@@ -32,8 +32,17 @@ namespace Assets.HeroEditor4D.Common.Scripts.CharacterScripts
         [Header("Other")]
         public LayerManager LayerManager;
         public Color BodyColor;
+
+        // [SerializeField] private SpriteCollection _spriteCollection;
         
-        public SpriteCollection SpriteCollection => Parts[0].SpriteCollection;
+        // public SpriteCollection SpriteCollection => _spriteCollection;
+        // public SpriteCollection SpriteCollection => Parts[0].SpriteCollection;
+        [SerializeField] private List<SpriteCollection> _spriteCollections;
+        [SerializeField] private SpriteCollection _spriteCollection;
+        
+        public SpriteCollection SpriteCollection => _spriteCollection;
+        
+        
         private List<Character> PartsExceptBack => new List<Character> { Front, Left, Right };
 
         public List<Sprite> Body { set { Parts.ForEach(i => i.Body = value.ToList()); } }
@@ -252,67 +261,222 @@ namespace Assets.HeroEditor4D.Common.Scripts.CharacterScripts
 
         public void EquipSecondaryMelee1H(Item item)
         {
-            Equip(SpriteCollection.MeleeWeapon1H.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.SecondaryMelee1H);
+            foreach (var spriteCollection in _spriteCollections)
+            {
+                var itemSprite = spriteCollection.MeleeWeapon1H.SingleOrDefault(i => i.Id == item.Params.SpriteId);
+                if ( itemSprite != null)
+                {
+                    Equip(itemSprite, EquipmentPart.SecondaryMelee1H);
+                    return;
+                }
+            }
+
+            // Equip(SpriteCollection.MeleeWeapon1H.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.SecondaryMelee1H);
         }
 
         public void EquipArmor(Item item)
         {
-            if (item == null) UnEquip(EquipmentPart.Armor);
-            else Equip(SpriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId), EquipmentPart.Armor);
+            // if (item == null) UnEquip(EquipmentPart.Armor);
+            // else Equip(SpriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId), EquipmentPart.Armor);
+            //
+            if (item == null)
+            {
+                UnEquip(EquipmentPart.Armor);
+            }
+            else
+            {
+                foreach (var spriteCollection in _spriteCollections)
+                {
+                    var itemSprite = spriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId);
+                    if (itemSprite != null)
+                    {
+                        Equip(itemSprite, EquipmentPart.Armor);
+                        return;
+                    }
+                }
+            }
         }
 
         public void EquipHelmet(Item item)
         {
-            if (item == null) UnEquip(EquipmentPart.Helmet);
-            else Equip(SpriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId), EquipmentPart.Helmet);
+            // if (item == null) UnEquip(EquipmentPart.Helmet);
+            // else Equip(SpriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId), EquipmentPart.Helmet);
+            
+            if (item == null)
+            {
+                UnEquip(EquipmentPart.Helmet);
+            }
+            else
+            {
+                foreach (var spriteCollection in _spriteCollections)
+                {
+                    var itemSprite = spriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId);
+                    if (itemSprite != null)
+                    {
+                        Equip(itemSprite, EquipmentPart.Helmet);
+                        return;
+                    }
+                }
+            }
         }
 
         public void EquipVest(Item item)
         {
-            if (item == null) UnEquip(EquipmentPart.Vest);
-            else Equip(SpriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId), EquipmentPart.Vest);
+            // if (item == null) UnEquip(EquipmentPart.Vest);
+            // else Equip(SpriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId), EquipmentPart.Vest);
+            
+            if (item == null)
+            {
+                UnEquip(EquipmentPart.Vest);
+            }
+            else
+            {
+                foreach (var spriteCollection in _spriteCollections)
+                {
+                    var itemSprite = spriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId);
+                    if (itemSprite != null)
+                    {
+                        Equip(itemSprite, EquipmentPart.Vest);
+                        return;
+                    }
+                }
+            }
         }
 
         public void EquipBracers(Item item)
         {
-            if (item == null) UnEquip(EquipmentPart.Bracers);
-            else Equip(SpriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId), EquipmentPart.Bracers);
+            // if (item == null) UnEquip(EquipmentPart.Bracers);
+            // else Equip(SpriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId), EquipmentPart.Bracers);
+            
+            if (item == null)
+            {
+                UnEquip(EquipmentPart.Bracers);
+            }
+            else
+            {
+                foreach (var spriteCollection in _spriteCollections)
+                {
+                    var itemSprite = spriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId);
+                    if (itemSprite != null)
+                    {
+                        Equip(itemSprite, EquipmentPart.Bracers);
+                        return;
+                    }
+                }
+            }
         }
 
         public void EquipLeggings(Item item)
         {
-            if (item == null) UnEquip(EquipmentPart.Leggings);
-            else Equip(SpriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId), EquipmentPart.Leggings);
+            // if (item == null) UnEquip(EquipmentPart.Leggings);
+            // else Equip(SpriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId), EquipmentPart.Leggings);
+            
+            if (item == null)
+            {
+                UnEquip(EquipmentPart.Leggings);
+            }
+            else
+            {
+                foreach (var spriteCollection in _spriteCollections)
+                {
+                    var itemSprite = spriteCollection.Armor.Single(i => i.Id == item.Params.SpriteId);
+                    if (itemSprite != null)
+                    {
+                        Equip(itemSprite, EquipmentPart.Leggings);
+                        return;
+                    }
+                }
+            }
         }
 
         public void EquipShield(Item item)
         {
-            Equip(SpriteCollection.Shield.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.Shield);
+            // Equip(SpriteCollection.Shield.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.Shield);
+            
+            foreach (var spriteCollection in _spriteCollections)
+            {
+                var itemSprite = spriteCollection.Shield.SingleOrDefault(i => i.Id == item.Params.SpriteId);
+                if ( itemSprite != null)
+                {
+                    Equip(itemSprite, EquipmentPart.Shield);
+                    return;
+                }
+            }
         }
         
         public void EquipMeleeWeapon1H(Item item)
         {
-            Equip(SpriteCollection.MeleeWeapon1H.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.MeleeWeapon1H);
+            // Equip(SpriteCollection.MeleeWeapon1H.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.MeleeWeapon1H);
+            
+            foreach (var spriteCollection in _spriteCollections)
+            {
+                var itemSprite = spriteCollection.MeleeWeapon1H.SingleOrDefault(i => i.Id == item.Params.SpriteId);
+                if ( itemSprite != null)
+                {
+                    Equip(itemSprite, EquipmentPart.MeleeWeapon1H);
+                    return;
+                }
+            }
         }
 
         public void EquipMeleeWeapon2H(Item item)
         {
-            Equip(SpriteCollection.MeleeWeapon2H.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.MeleeWeapon2H);
+            // Equip(SpriteCollection.MeleeWeapon2H.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.MeleeWeapon2H);
+            
+            foreach (var spriteCollection in _spriteCollections)
+            {
+                var itemSprite = spriteCollection.MeleeWeapon2H.SingleOrDefault(i => i.Id == item.Params.SpriteId);
+                if ( itemSprite != null)
+                {
+                    Equip(itemSprite, EquipmentPart.MeleeWeapon2H);
+                    return;
+                }
+            }
         }
 
         public void EquipBow(Item item)
         {
-            Equip(SpriteCollection.Bow.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.Bow);
+            // Equip(SpriteCollection.Bow.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.Bow);
+            
+            foreach (var spriteCollection in _spriteCollections)
+            {
+                var itemSprite = spriteCollection.Bow.SingleOrDefault(i => i.Id == item.Params.SpriteId);
+                if ( itemSprite != null)
+                {
+                    Equip(itemSprite, EquipmentPart.Bow);
+                    return;
+                }
+            }
         }
 
         public void EquipCrossbow(Item item)
         {
-            Equip(SpriteCollection.Crossbow.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.Crossbow);
+            // Equip(SpriteCollection.Crossbow.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.Crossbow);
+            
+            foreach (var spriteCollection in _spriteCollections)
+            {
+                var itemSprite = spriteCollection.Crossbow.SingleOrDefault(i => i.Id == item.Params.SpriteId);
+                if ( itemSprite != null)
+                {
+                    Equip(itemSprite, EquipmentPart.Crossbow);
+                    return;
+                }
+            }
         }
 
         public void EquipSecondaryFirearm(Item item)
         {
-            Equip(SpriteCollection.Firearm1H.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.SecondaryFirearm1H);
+            // Equip(SpriteCollection.Firearm1H.SingleOrDefault(i => i.Id == item.Params.SpriteId), EquipmentPart.SecondaryFirearm1H);
+            
+            foreach (var spriteCollection in _spriteCollections)
+            {
+                var itemSprite = spriteCollection.Firearm1H.SingleOrDefault(i => i.Id == item.Params.SpriteId);
+                if ( itemSprite != null)
+                {
+                    Equip(itemSprite, EquipmentPart.SecondaryFirearm1H);
+                    return;
+                }
+            }
         }
 
         #endregion

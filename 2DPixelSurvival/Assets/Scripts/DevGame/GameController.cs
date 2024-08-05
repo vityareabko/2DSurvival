@@ -3,25 +3,29 @@ using System.Collections.Generic;
 using DevSystems;
 using DevPlayer;
 using UnityEngine;
+using Zenject;
 
 namespace DevGame
 {
     public class GameController : MonoBehaviour
     {
+        [SerializeField] private HandEquipmentDatabase _handEquipmentDatabase;
+        
+        [SerializeField] private CollectorContrloller collectorContrloller;
+        [SerializeField] private MiningRulesController miningRulesController;
+        
         [SerializeField] private Player _player;
-        [SerializeField] private Collector _collector;
-
-        [SerializeField] private CheckingMiningRules _checkingMiningRules;
+        
         private PlayerHandEquipmentStorage _playerHandEquipmentStorage;
         
-        private void Awake()
+        [Inject] private void Construct()
         {
-            _playerHandEquipmentStorage = new PlayerHandEquipmentStorage(new List<HandEquipment>());
+            _playerHandEquipmentStorage = new PlayerHandEquipmentStorage(new List<HandEquipment>(), new List<HandEquipment>(), _handEquipmentDatabase);
             
             _player.Initialize(_playerHandEquipmentStorage);
-            _checkingMiningRules.Initialize(_playerHandEquipmentStorage, _player);
+            miningRulesController.Initialize(_playerHandEquipmentStorage, _player, _player);
 
-            _collector.PickUp += OnPickUpSelectableHandler;
+            collectorContrloller.PickUp += OnPickUpSelectableHandler;
         }
 
         private void OnPickUpSelectableHandler(ISelectable obj)
@@ -34,12 +38,12 @@ namespace DevGame
                         _playerHandEquipmentStorage.AddTools(toolAxe);
                     break;
                 case PickUpType.Pickaxe:
-                    Debug.Log("Подобрал топор епт!");
+                    Debug.Log("Подобрал Кируку епт!");
                     if (obj is HandEquipment toolPickAxe)
                         _playerHandEquipmentStorage.AddTools(toolPickAxe);
                     break;
                 case PickUpType.Sickle:
-                    Debug.Log("Подобрал топор епт!");
+                    Debug.Log("Подобрал Серп епт!");
                     if (obj is HandEquipment toolSickle)
                         _playerHandEquipmentStorage.AddTools(toolSickle);
                     break;

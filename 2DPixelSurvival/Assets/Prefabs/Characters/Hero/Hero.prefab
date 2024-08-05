@@ -10888,6 +10888,8 @@ MonoBehaviour:
   AnimationManager: {fileID: 249948320391467329}
   LayerManager: {fileID: 7869785546150847804}
   BodyColor: {r: 1, g: 0.78431374, b: 0.47058824, a: 1}
+  _spriteCollections: []
+  _spriteCollection: {fileID: 0}
 --- !u!114 &249948320391467329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11201,6 +11203,7 @@ MonoBehaviour:
   _rb: {fileID: 4534295708596877041}
   _animation: {fileID: 249948320391467329}
   _character4D: {fileID: 1139185927025520751}
+  _vitalitySystem: {fileID: 0}
 --- !u!1 &5477097303086628084
 GameObject:
   m_ObjectHideFlags: 0

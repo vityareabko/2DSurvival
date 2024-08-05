@@ -7,6 +7,7 @@ namespace DevSystems.MiningSystem
     {
         Wood,
         Stone,
+        Leaf,
     }
 
     public interface IMining

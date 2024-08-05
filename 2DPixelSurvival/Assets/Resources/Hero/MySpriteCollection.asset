@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a7a8e7b56513e488c69503e063a6d4, type: 3}
+  m_Name: MySpriteCollection
+  m_EditorClassIdentifier: 
+  Id: CustomSpriteCollection
+  SpriteFolders: []
+  CollectionFilter: []
+  CollectionFilterIgnore: []
+  Body: []
+  Ears: []
+  Hair: []
+  Beard: []
+  Eyebrows: []
+  Eyes: []
+  Mouth: []
+  Armor: []
+  MeleeWeapon1H:
+  - Name: ToolAxe
+    Id: CustomToolAxe
+    Edition: CustomTool
+    Collection: Custom
+    Path: Assets/HeroEditor4D/FantasyHeroes/Sprites/Equipment/MeleeWeapon1H/Basic/Axe/RustedShortAxe.png
+    Sprite: {fileID: 21300000, guid: 9deb03629283b3a48a82f3d2f4aa6747, type: 3}
+    Sprites:
+    - {fileID: 21300000, guid: 9deb03629283b3a48a82f3d2f4aa6747, type: 3}
+    Tags: []
+    Meta: 
+  - Name: ToolSickle
+    Id: CustomToolSickle
+    Edition: CustomTool
+    Collection: Custom
+    Path: Assets/HeroEditor4D/UndeadHeroes/Sprites/Equipment/MeleeWeapon1H/Undead/Sword/Sickle.png
+    Sprite: {fileID: 21300000, guid: 7350d2905feaed349822d56e0f96bc7a, type: 3}
+    Sprites:
+    - {fileID: 21300000, guid: 7350d2905feaed349822d56e0f96bc7a, type: 3}
+    Tags: []
+    Meta: 
+  MeleeWeapon2H:
+  - Name: ToolPickAxe
+    Id: CustomToolPickAxe
+    Edition: CustomTool
+    Collection: Custom
+    Path: Assets/HeroEditor4D/UndeadHeroes/Sprites/Equipment/MeleeWeapon2H/Undead/Axe/RustedPickaxe.png
+    Sprite: {fileID: 21300000, guid: a8b05c0e577fb1548ae7577d71bddeee, type: 3}
+    Sprites:
+    - {fileID: 21300000, guid: a8b05c0e577fb1548ae7577d71bddeee, type: 3}
+    Tags: []
+    Meta: 
+  Bow: []
+  Crossbow: []
+  Firearm1H: []
+  Firearm2H: []
+  Shield: []
+  Back: []
+  Throwable: []
+  Supplies: []
+  Makeup: []
+  Mask: []
+  Earrings: []
+  Wings: []
+  IncludePsd: 0
+  DebugLogging: 0
