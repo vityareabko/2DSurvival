@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95fee854a2bb4f729b0e67b34e2a8667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetOffset: {x: 0, y: 0.9, z: 0}
+  _targetOffset: {x: 0, y: 0.5, z: 0}
   IsFollowTarget: 0
   CurveByX: 0
   CurveByY: 0

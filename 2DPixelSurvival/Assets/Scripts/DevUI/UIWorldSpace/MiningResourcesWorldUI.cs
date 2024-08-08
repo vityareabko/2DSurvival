@@ -1,6 +1,8 @@
+ using System;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace DevPlayer
@@ -10,7 +12,9 @@ namespace DevPlayer
         
         [SerializeField] private RectTransform _infoAboutNeededTool;
         [SerializeField] private RectTransform _healthProgressBar;
-        [SerializeField] private Image _healthFillAmount;
+        [FormerlySerializedAs("_healthFillAmount")] [SerializeField] private Image _healthFill;
+        [SerializeField] private Color _defoultFillColor; 
+        [SerializeField] private Color _recoverFillColor;
         
         [SerializeField] private TMP_Text _damageText;
         private RectTransform _damageTextRT;
@@ -27,13 +31,18 @@ namespace DevPlayer
             _damageTextRT = _damageText.GetComponent<RectTransform>();
             
             ToolMissingNotifier(false);
+            ResetWorldUI();
+        }
+
+        private void OnEnable()
+        {
             _consumableDamage = 0;
             _healthProgressBar.localScale = Vector3.zero;
-            _healthFillAmount.fillAmount = 1f;
+            _healthFill.fillAmount = 1f;
             _healthProgressBar.gameObject.SetActive(false);
             _damageText.gameObject.SetActive(false);
         }
-        
+
         public void ToolMissingNotifier(bool show)
         {
             if (show)
@@ -53,10 +62,46 @@ namespace DevPlayer
         public void HealthChangeHandler(float currentHealth, float maxHealth, int damage)
         {
             DamageEffect(damage);
-            ProgressBarEffect(currentHealth, maxHealth);
+            ProgressBarDecreaseHealthEffect(currentHealth, maxHealth);
+
+            if (currentHealth <= 0)
+                ResetWorldUI();
+            
         }
 
-        private void ProgressBarEffect(float currentHealth, float maxHealth)
+        public void RecoverProcess(float recoverDurationTime)
+        {
+            _healthBarDelayHide?.Kill();
+            _tweenDamageTextDelayEffect?.Kill();
+            
+            _healthFill.color = _recoverFillColor;
+            _healthFill.fillAmount = 0f;
+            
+            DOVirtual.DelayedCall(recoverDurationTime * 0.2f, () =>
+            {
+                _healthProgressBar.localScale = Vector3.zero;
+                _healthProgressBar.gameObject.SetActive(true);
+                _healthProgressBar.DOScale(1, 0.1f).SetEase(Ease.InOutSine);
+                _healthFill.DOFillAmount(1f, recoverDurationTime - (recoverDurationTime * 0.2f))
+                    .SetEase(Ease.Linear)
+                    .OnComplete(() =>
+                    {
+                        _healthFill.color = _defoultFillColor;
+                        DOVirtual.DelayedCall(0.2f, () => _healthProgressBar.gameObject.SetActive(false));
+                    });
+            });
+        }
+
+        private void ResetWorldUI()
+        {
+            _consumableDamage = 0;
+            _healthProgressBar.localScale = Vector3.zero;
+            _healthFill.fillAmount = 1f;
+            _healthProgressBar.gameObject.SetActive(false);
+            _damageText.gameObject.SetActive(false);
+        }
+
+        private void ProgressBarDecreaseHealthEffect(float currentHealth, float maxHealth)
         {
             if (_healthBarDelayHide != null)
                 _healthBarDelayHide.Kill();
@@ -65,7 +110,7 @@ namespace DevPlayer
             _healthProgressBar.DOScale(1, 0.1f)
                 .SetEase(Ease.InOutSine);
 
-            _healthFillAmount.fillAmount = currentHealth / maxHealth;
+            _healthFill.fillAmount = currentHealth / maxHealth;
 
             _healthBarDelayHide = DOVirtual.DelayedCall(3f, () =>
             {

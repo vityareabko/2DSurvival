@@ -14,7 +14,7 @@ namespace DevSystems.VitalitySystem
         public const string ThristModule = "ThristModule";
     }
 
-    public class VitalityModuleSystem : MonoBehaviour //, IVitality
+    public class VitalityModuleSystem : MonoBehaviour
     {
         [SerializeField] private bool _healthModule;
         [ShowIf("_healthModule")][SerializeField] private int _healthMaxValue;
@@ -35,7 +35,7 @@ namespace DevSystems.VitalitySystem
             if (_healthModule)
             {
                 _vitalityModules.Add(new HealthModule(_healthMaxValue, this));
-                EventAggregator.Subscribe<HealthEmptyEvent>(OnHealthEmptyHandler);
+                // EventAggregator.Subscribe<HealthEmptyEvent>(OnHealthEmptyHandler);
             }
 
             if (_staminaModule)
@@ -58,7 +58,7 @@ namespace DevSystems.VitalitySystem
         {
             if (_healthModule)
             {
-                EventAggregator.Unsubscribe<HealthEmptyEvent>(OnHealthEmptyHandler);
+                // EventAggregator.Unsubscribe<HealthEmptyEvent>(OnHealthEmptyHandler);
             }
             
         }
@@ -93,20 +93,14 @@ namespace DevSystems.VitalitySystem
             if (vitalityModule != null)
             {
                 vitalityModule.DecreaseValue(amount);
-                Debug.Log($"decrease Vitality Value - {amount}, current Vitality Value - {vitalityModule.GetCurrentValue()}");
             }
         }
 
-        private void Died()
+        public void RecoveryValueByModuleName(string moduleName, int recoverAmount, bool notify = true)
         {
-            gameObject.SetActive(false);
-            Debug.Log($"{gameObject.name} died and was deactivated.");
-        }
-        
-        private void OnHealthEmptyHandler(object sender, HealthEmptyEvent eventData)
-        {
-            if (sender == this)
-                Died();
+            var vitalityModule = _vitalityModules.FirstOrDefault(m => m.GetType().Name == moduleName);
+            if (vitalityModule != null)
+                vitalityModule.RecoverValue(recoverAmount, notify);
         }
     }
 
@@ -116,9 +110,6 @@ namespace DevSystems.VitalitySystem
         
         protected override void NotifyChangeVitalityValue(int damage)
         {
-            // это выполняется когда currentValue 0 
-            Debug.Log($"{_currentValue / _maxValue}");
-            
             EventAggregator.Post(_owner, new UpdatedHealthVitalityEvent() {CurrentValue = _currentValue, MaxValue = _maxValue, Damage = damage});
 
             if (_currentValue <= 0)

@@ -11442,6 +11442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6f3a1be97f342a38aeb9b557c77651f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _resourceCollection: []
   _rb: {fileID: 4534295708596877041}
   _animation: {fileID: 249948320391467329}
   _character4D: {fileID: 1139185927025520751}

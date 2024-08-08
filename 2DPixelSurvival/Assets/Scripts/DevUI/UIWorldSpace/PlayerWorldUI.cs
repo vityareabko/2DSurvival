@@ -1,5 +1,6 @@
 using System;
 using DevSystems;
+using DevSystems.MiningSystem;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -41,13 +42,13 @@ namespace DevPlayer
                     _notifyPickUpText.NotifyPickUptText("+Sword");
                     break;
                 case PickUpType.Wood:
-                    _notifyPickUpText.UpdateCounterText();
+                    _notifyPickUpText.UpdateCounterText("+Wood", ResourceType.Wood);
                     break;
                 case PickUpType.Stone:
-                    _notifyPickUpText.UpdateCounterText();
+                    _notifyPickUpText.UpdateCounterText("+Stone", ResourceType.Stone);
                     break;
                 case PickUpType.Leaf:
-                    _notifyPickUpText.UpdateCounterText();
+                    _notifyPickUpText.UpdateCounterText("+Leaf", ResourceType.Leaf);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();

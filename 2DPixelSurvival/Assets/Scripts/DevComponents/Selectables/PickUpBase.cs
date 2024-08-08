@@ -4,6 +4,7 @@ using DevSystems;
 using Extensions;
 using UnityEngine;
 
+[SelectionBase]
 public class PickUpBase : MonoBehaviour, ISelectable
 {
     public event Action<ISelectable> PickUp;
@@ -30,16 +31,9 @@ public class PickUpBase : MonoBehaviour, ISelectable
 
     private void OnResourceReachedTarget()
     {
-        if (_targetFollower != null)
-        {
-            EventAggregator.Post(this, new PickUpEvent() {PickUpType = _pickUpType});
+        EventAggregator.Post(this, new PickUpEvent() {PickUpType = _pickUpType});
             gameObject.SetActive(false);
-        }
-        else
-        {
-            PickUp?.Invoke(this);
-            gameObject.SetActive(false);
-        }
+        
     }
     
     protected virtual void OnTriggerEnter2D(Collider2D collider)

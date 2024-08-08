@@ -1,3 +1,4 @@
+using DevSystems.MiningSystem;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
@@ -10,45 +11,55 @@ namespace DevPlayer
         private RectTransform _counterTextRT;
         private Tween _tweenCurrentResourceCollectCount;
         private Tween _tweenScaleEffect;
+        private Tween _tweenPickUp;
         private int _currentResourceCollectCount;
-        private bool _isNotifyPickUp;
-
+        private ResourceType _lastPickUpResourceType;
+        
         public NotifyPickUpText(TMP_Text contentText)
         {
+            _lastPickUpResourceType = ResourceType.None;
             _contentText = contentText;
             ResetCounterResourceText();
             _counterTextRT = _contentText.gameObject.GetComponent<RectTransform>();
         }
 
-        public void UpdateCounterText()
+        public void UpdateCounterText(string text, ResourceType type)
         {
-            if (_isNotifyPickUp)
-                return;
-            
             _tweenCurrentResourceCollectCount?.Kill();
-
+            
             _contentText.gameObject.SetActive(true);
-            _contentText.text = $"+{++_currentResourceCollectCount}";
+            if (_lastPickUpResourceType == type)
+            {
+                _contentText.text = $"{++_currentResourceCollectCount} {text}";
+            }
+            else
+            {
+                _currentResourceCollectCount = 0;
+                _contentText.text = $"{++_currentResourceCollectCount} {text}";
+            }
+            
+            _lastPickUpResourceType = type;
             
             if (_tweenScaleEffect is null)
-                _tweenScaleEffect = _counterTextRT.DOPunchScale(new Vector2(0.4f, 0.4f), 0.03f).OnComplete(() => _tweenScaleEffect = null);
+                _tweenScaleEffect = _counterTextRT.DOPunchScale(new Vector2(0.4f, 0.4f), 0.1f).OnComplete(() => _tweenScaleEffect = null);
         
             _tweenCurrentResourceCollectCount = DOVirtual.DelayedCall(2f, ResetCounterResourceText);
         }
 
         public void NotifyPickUptText(string text)
         {
-            _contentText.fontSize = 0.24f;
+            if (_tweenPickUp is not null)
+                _tweenPickUp.Kill();
             
+            _contentText.fontSize = 0.56f;
             _contentText.text = text;
-            _isNotifyPickUp = true;
             _contentText.gameObject.SetActive(true); 
-            DOVirtual.DelayedCall(2f, () =>
+            _tweenPickUp = DOVirtual.DelayedCall(2f, () =>
             {
                 _contentText.gameObject.SetActive(false);
                 _contentText.text = "";
-                _isNotifyPickUp = false;
-                _contentText.fontSize = 0.32f;
+                _contentText.fontSize = 0.7f;
+                _tweenPickUp = null;
             });
         }
 

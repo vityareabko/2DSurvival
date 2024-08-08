@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+using DevPlayer;
 using UnityEngine;
 
 namespace DevSystems
@@ -8,47 +8,41 @@ namespace DevSystems
     
     public class CollectorContrloller : MonoBehaviour
     {
-        public event Action<ISelectable> PickUp; 
-        
-        [SerializeField] private Transform _selectableObjectsParent;
-                
-        private List<HandEquipment> _сollectionSelecatable = new();
+        private PlayerHandEquipmentStorage _playerHandEquipmentStorage;
+
+        public void Initialize(PlayerHandEquipmentStorage playerHandEquipmentStorage)
+        {
+            _playerHandEquipmentStorage = playerHandEquipmentStorage;
+        }
 
         private void Awake()
         {
-            _сollectionSelecatable = new List<HandEquipment>(_selectableObjectsParent.GetComponentsInChildren<HandEquipment>());
-            
-            if (_сollectionSelecatable is not null)
-            {
-                foreach (var selectable in _сollectionSelecatable)
-                    selectable.PickUp += OnPickUpHandler;
-            }
-            
             EventAggregator.Subscribe<PickUpEvent>(OnPickUpEventHandler);
         }
 
         private void OnDestroy()
         {
-            if (_сollectionSelecatable is not null)
-            {
-                foreach (var selectable in _сollectionSelecatable)
-                    selectable.PickUp -= OnPickUpHandler;
-            }
-            
             EventAggregator.Unsubscribe<PickUpEvent>(OnPickUpEventHandler);
         }
         
-        private void PickUpResourceHandler(ResourceView resourceView)
+        private void PickUPHandler(ISelectable pickUpView)
         {
-            switch (resourceView.SelectableType)
+            ResourceView? gameResource = pickUpView is ResourceView resource ? resource : null;
+            HandEquipmentView? handEquipment = pickUpView is HandEquipmentView handEquip ? handEquip : null;
+                
+            switch (pickUpView.SelectableType)
             {
                 case PickUpType.Axe:
+                    _playerHandEquipmentStorage.AddTools(handEquipment);
                     break;
                 case PickUpType.Pickaxe:
+                    _playerHandEquipmentStorage.AddTools(handEquipment);
                     break;
                 case PickUpType.Sickle:
+                    _playerHandEquipmentStorage.AddTools(handEquipment);
                     break;
                 case PickUpType.Sword:
+                    _playerHandEquipmentStorage.AddTools(handEquipment);
                     break;
                 case PickUpType.Wood:
                     break;
@@ -60,31 +54,12 @@ namespace DevSystems
                     throw new ArgumentOutOfRangeException();
             }
         }
-
-        private void OnPickUpHandler(ISelectable obj)
-        {
-            PickUp?.Invoke(obj);
-        }
         
         private void OnPickUpEventHandler(object sender, PickUpEvent eventData)
         {
             if (sender is ISelectable selectable)
             {
-                PickUp?.Invoke(selectable);
-
-                switch (selectable)
-                {
-                    case HandEquipment handEquipment:
-                        var handEquipPickUp = selectable as HandEquipment;
-                        PickUp?.Invoke(handEquipPickUp);
-                        break;
-                    case ResourceView resourceView:
-                        // делаю Event на то что игрок подобрал рессурс и нужено ввести UI щетчик 
-                        PickUpResourceHandler(resourceView);
-                        break;
-                    default:
-                        throw new ArgumentOutOfRangeException(nameof(selectable));
-                }
+                PickUPHandler(selectable);
             }
         }
     }

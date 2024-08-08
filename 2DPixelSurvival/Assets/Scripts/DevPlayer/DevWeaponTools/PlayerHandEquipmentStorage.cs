@@ -6,20 +6,20 @@ namespace DevPlayer
 {
    public class PlayerHandEquipmentStorage
     {
-        private List<HandEquipment> _weapons = new();
-        private List<HandEquipment> _tools = new();
+        private List<HandEquipmentView> _weapons = new();
+        private List<HandEquipmentView> _tools = new();
 
         private HandEquipmentDatabase _handEquipmentDatabase;
     
-        public PlayerHandEquipmentStorage(List<HandEquipment> weapons, List<HandEquipment> tools, HandEquipmentDatabase handEquipmentDatabase)
+        public PlayerHandEquipmentStorage(List<HandEquipmentView> weapons, List<HandEquipmentView> tools, HandEquipmentDatabase handEquipmentDatabase)
         {
             _weapons = weapons;
             _tools = tools;
             _handEquipmentDatabase = handEquipmentDatabase;
         }
 
-        public void AddWeapons(HandEquipment weapon) => _weapons.Add(weapon);
-        public void AddTools(HandEquipment tool) => _tools.Add(tool);
+        public void AddWeapons(HandEquipmentView weapon) => _weapons.Add(weapon);
+        public void AddTools(HandEquipmentView tool) => _tools.Add(tool);
     
         public bool HasTypeOfTools(ToolsType wType) => _tools.Any(w => w.ToolsType == wType);
         public bool HasTypeOfWeapon(PlayerWeaponType wType) => _weapons.Any(w => w.WeaponType == wType);

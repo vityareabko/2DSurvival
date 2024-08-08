@@ -7,7 +7,8 @@ namespace DevSystems.VitalitySystem
         void UpdateModule();
         int GetCurrentValue();
         int GetMaxValue();
-        void DecreaseValue(int amount);
+        void DecreaseValue(int decraseAmount);
+        void RecoverValue(int recoverValue, bool notify = true);
     }
     
     public abstract class VitalityModuleBase : IVitalityModule
@@ -31,16 +32,29 @@ namespace DevSystems.VitalitySystem
 
         public virtual int GetMaxValue() => _maxValue;
         
-        public void DecreaseValue(int amount)
+        public void DecreaseValue(int decraseAmount)
         {
-            _currentValue -= amount;
+            _currentValue -= decraseAmount;
             if (_currentValue < 0)
             {
                 _currentValue = 0;
             }
             
-            NotifyChangeVitalityValue(amount);
+            NotifyChangeVitalityValue(decraseAmount);
             
+        }
+
+        public void RecoverValue(int recoverValue, bool notify = true)
+        {
+            if (_currentValue >= _maxValue)
+                _currentValue = _maxValue;
+            else
+            {
+                _currentValue += recoverValue;
+            }
+            
+            if (notify)
+                NotifyChangeVitalityValue(recoverValue);
         }
 
         protected abstract void NotifyChangeVitalityValue(int damage);

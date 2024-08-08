@@ -5,9 +5,10 @@ namespace DevSystems.MiningSystem
 {
     public enum ResourceType
     {
-        Wood,
-        Stone,
-        Leaf,
+        None   = 0,
+        Wood   = 1,
+        Stone  = 2,
+        Leaf   = 3,
     }
 
     public interface IMining

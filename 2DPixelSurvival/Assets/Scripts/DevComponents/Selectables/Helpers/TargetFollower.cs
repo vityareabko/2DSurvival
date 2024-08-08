@@ -13,6 +13,7 @@ public class TargetFollower : MonoBehaviour
     [SerializeField] private bool CurveByY = true;
     
     private Transform _target;
+    private Vector3 _initialScale;
     private Vector3 _currentTargetPosition = new Vector3(0f, 0.5f, 0f);
     private float _progressAnimation;
     private float _curveX = 0f;
@@ -26,6 +27,7 @@ public class TargetFollower : MonoBehaviour
         IsFollowTarget = true;
         _curveX = 0f;
         _curveY = 0f;
+        _initialScale = transform.localScale;
     }
 
     private void FixedUpdate()
@@ -45,37 +47,34 @@ public class TargetFollower : MonoBehaviour
         Vector3 endPosition = _target.position + _targetOffset;
         
         if (_curveX == 0 && CurveByX)
-            _curveX = UnityEngine.Random.Range(-10f, 10f);
+            _curveX = UnityEngine.Random.Range(-3f, 3f);
         if (_curveY == 0 && CurveByY)
-            _curveY = UnityEngine.Random.Range(2f, 3f);
+            _curveY = UnityEngine.Random.Range(1f, 2f);
 
-        Vector3 controlPoint = CalculateControlPoint(startPosition, endPosition);
-        Vector3 newPos = CalculateNewPosition(startPosition, controlPoint, endPosition);
+        Vector3 controlPoint = (startPosition + endPosition) / 2 + new Vector3(_curveX, _curveY, 0);
+        Vector3 midPoint = Vector3.Lerp(startPosition, controlPoint, _progressAnimation * 0.5f);
+        Vector3 newPos = Vector3.Lerp(midPoint, endPosition, _progressAnimation);
 
         transform.position = newPos;
 
         _currentTargetPosition = endPosition;
+        
+        
+        if (_progressAnimation < 0.5f)
+        {
+            float scaleMultiplier = 1 + 0.2f * (_progressAnimation / 0.5f);
+            transform.localScale = _initialScale * scaleMultiplier;
+        }
+        else
+        {
+            float scaleMultiplier = 1.2f - 0.8f * ((_progressAnimation - 0.5f) / 0.5f);
+            transform.localScale = _initialScale * scaleMultiplier;
+        }
 
-        if (HasReachedTarget(newPos, endPosition))
+        if (Vector3.Distance(newPos, endPosition) < 0.1f)
         {
             StopMovement();
         }
-    }
-
-    private Vector3 CalculateControlPoint(Vector3 startPosition, Vector3 endPosition)
-    {
-        return (startPosition + endPosition) / 2 + new Vector3(_curveX, _curveY, 0);
-    }
-
-    private Vector3 CalculateNewPosition(Vector3 startPosition, Vector3 controlPoint, Vector3 endPosition)
-    {
-        Vector3 midPoint = Vector3.Lerp(startPosition, controlPoint, _progressAnimation * 0.3f);
-        return Vector3.Lerp(midPoint, endPosition, _progressAnimation);
-    }
-
-    private bool HasReachedTarget(Vector3 currentPosition, Vector3 endPosition)
-    {
-        return Vector3.Distance(currentPosition, endPosition) < 0.1f;
     }
 
     private void StopMovement()
