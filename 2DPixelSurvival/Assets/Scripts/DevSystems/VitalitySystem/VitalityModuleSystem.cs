@@ -13,13 +13,6 @@ namespace DevSystems.VitalitySystem
         public const string HungerModule = "HungerModule";
         public const string ThristModule = "ThristModule";
     }
-    
-    // public interface IVitality
-    // {
-    //     int GetCurrentVitalityValueByModuleName(string moduleName);
-    //     int GetMaxVitalityValueByModuleName(string moduleName);
-    //     void DecreaseVitalityValue(string moduleName, int amount);
-    // }
 
     public class VitalityModuleSystem : MonoBehaviour //, IVitality
     {
@@ -121,11 +114,12 @@ namespace DevSystems.VitalitySystem
     {
         public HealthModule(int maxValue, MonoBehaviour owner) : base(maxValue, owner) { }
         
-        protected override void NotifyChangeVitalityValue()
+        protected override void NotifyChangeVitalityValue(int damage)
         {
             // это выполняется когда currentValue 0 
             Debug.Log($"{_currentValue / _maxValue}");
-            EventAggregator.Post(_owner, new UpdatedHealthVitalityEvent() {CurrentValue = _currentValue, MaxValue = _maxValue});
+            
+            EventAggregator.Post(_owner, new UpdatedHealthVitalityEvent() {CurrentValue = _currentValue, MaxValue = _maxValue, Damage = damage});
 
             if (_currentValue <= 0)
             {
@@ -138,7 +132,7 @@ namespace DevSystems.VitalitySystem
     {
         public StaminaModule(int maxValue, MonoBehaviour owner) : base(maxValue, owner) { }
         
-        protected override void NotifyChangeVitalityValue()
+        protected override void NotifyChangeVitalityValue(int damage)
         {
             // это выполняется когда currentValue 0 
         }
@@ -148,7 +142,7 @@ namespace DevSystems.VitalitySystem
     {
         public HungerModule(int maxValue, MonoBehaviour owner) : base(maxValue, owner) { }
         
-        protected override void NotifyChangeVitalityValue()
+        protected override void NotifyChangeVitalityValue(int damage)
         {
             // это выполняется когда currentValue 0 
         }
@@ -158,7 +152,7 @@ namespace DevSystems.VitalitySystem
     {
         public ThristModule(int maxValue, MonoBehaviour owner) : base(maxValue, owner) { }
         
-        protected override void NotifyChangeVitalityValue()
+        protected override void NotifyChangeVitalityValue(int damage)
         {
             // это выполняется когда currentValue 0 
         }

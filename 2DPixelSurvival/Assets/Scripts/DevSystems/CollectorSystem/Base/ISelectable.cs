@@ -1,13 +1,22 @@
 using System;
+using Sirenix.OdinInspector;
 
 namespace DevSystems
 {
     public enum PickUpType
     {
-        Axe,
-        Pickaxe,
-        Sickle,
-        Sword,
+        // tools
+        Axe       = 0,
+        Pickaxe   = 1,
+        Sickle    = 2,
+        
+        // weapons
+        Sword     = 20,
+        
+        // resources 
+        Wood     = 50,
+        Stone    = 51,
+        Leaf     = 52,
     }
     
     public enum ToolsType

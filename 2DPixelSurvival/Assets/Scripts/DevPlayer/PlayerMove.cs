@@ -14,8 +14,9 @@ public class PlayerMove
     private float _yMove;
     private float _xMove;
 
-    public PlayerMove(AnimationManager anim, Rigidbody2D rb, Character4D character4D)
+    public PlayerMove(AnimationManager anim, Rigidbody2D rb, Character4D character4D, float moveSpeed)
     {
+        _moveSpeed = moveSpeed;
         _rb = rb;
         _character4D = character4D;
         _playerAnimation = anim;

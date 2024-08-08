@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using DevSystems;
 using DevPlayer;
@@ -46,6 +45,20 @@ namespace DevGame
                     Debug.Log("Подобрал Серп епт!");
                     if (obj is HandEquipment toolSickle)
                         _playerHandEquipmentStorage.AddTools(toolSickle);
+                    break;
+                case PickUpType.Sword:
+                    break;
+                case PickUpType.Wood:
+                    if (obj is ResourceView resource)
+                    {
+                    // обрабртка подбора рессурса
+                        resource.gameObject.SetActive(false);
+                        Debug.Log("Ресурс подобран епт !!!");
+                    }
+                    break;
+                case PickUpType.Stone:
+                    break;
+                case PickUpType.Leaf:
                     break;
                 default:
                     Debug.LogError("Такого мы не Хандлим !!!");    

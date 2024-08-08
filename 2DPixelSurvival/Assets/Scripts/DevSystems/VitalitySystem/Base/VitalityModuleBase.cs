@@ -39,10 +39,10 @@ namespace DevSystems.VitalitySystem
                 _currentValue = 0;
             }
             
-            NotifyChangeVitalityValue();
+            NotifyChangeVitalityValue(amount);
             
         }
 
-        protected abstract void NotifyChangeVitalityValue();
+        protected abstract void NotifyChangeVitalityValue(int damage);
     }
 }

@@ -12,7 +12,7 @@ namespace DevPlayer
     public interface IPlayerAction
     {
         void SelectTool(ToolsType type);
-        void GetMiningResource(bool isStart);
+        void GetMiningResource(bool isStartMining);
     }
 
     public interface IPlayerReader
@@ -28,8 +28,9 @@ namespace DevPlayer
         [SerializeField] private Rigidbody2D _rb;
         [SerializeField] private AnimationManager _animation;
         [SerializeField] private Character4D _character4D;
-
         [SerializeField] private VitalityModuleSystem _vitalitySystem;
+
+        [SerializeField] private float _moveSpeed = 2f;
         
         private PlayerMove _playerMove;
         private PlayerHandEquipmentStorage _playerHandEquipmentStorage;
@@ -54,8 +55,9 @@ namespace DevPlayer
 
             _currentToolsType = ToolsType.None;
             _currentWeaponType = PlayerWeaponType.None;
-            _playerMove = new PlayerMove(_animation, _rb, _character4D);
+            _playerMove = new PlayerMove(_animation, _rb, _character4D, _moveSpeed);
         }
+        
 
         private void Update()
         {
@@ -79,9 +81,9 @@ namespace DevPlayer
         public int GetHitToolDamageByType(ToolsType type) => _playerHandEquipmentStorage.GetToolData(type).Damage;
         public int GetHitWeaponDamageByType(PlayerWeaponType type) => _playerHandEquipmentStorage.GetWeaponData(type).Damage;
         
-        public void GetMiningResource(bool isStart)
+        public void GetMiningResource(bool isStartMining)
         {
-            if (isStart)
+            if (isStartMining)
             {
                 if (_isEquip)
                     _animation.Slash(true);

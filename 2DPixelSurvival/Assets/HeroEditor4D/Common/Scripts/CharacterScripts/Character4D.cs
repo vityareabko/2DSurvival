@@ -42,7 +42,6 @@ namespace Assets.HeroEditor4D.Common.Scripts.CharacterScripts
         
         public SpriteCollection SpriteCollection => _spriteCollection;
         
-        
         private List<Character> PartsExceptBack => new List<Character> { Front, Left, Right };
 
         public List<Sprite> Body { set { Parts.ForEach(i => i.Body = value.ToList()); } }
